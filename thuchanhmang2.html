@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc hanh sap xep</title>
+</head>
+<body>
+<script>
+    let arr = [2, 5, 2, 1, 90, 5, 77, 45, 32, 10];
+    let fist = 0;
+    let last = arr.length - 1;
+    let c;
+    for (fist; fist <= (arr.length - 1) / 2; last) {
+        c = arr[fist]
+        arr[fist] = arr[last];
+        arr[last] = c
+        fist++;
+        last--;
+    }
+    document.write(arr + ' ');
+</script>
+</body>
+</html>
